@@ -19,7 +19,7 @@ const fadeUpVariants = {
 };
 
 export function HeroGeometric() {
-  const CTA_LINK = "#oferta";
+  const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912";
 
   return (
     <div className="relative w-full overflow-hidden bg-[#0a0a0a]">
@@ -109,7 +109,7 @@ export function HeroGeometric() {
               </a>
               <p className="mt-3 text-zinc-600 text-sm">
                 <span className="line-through">De R$ 97,00</span>{" "}
-                <span className="text-white font-bold">por R$ 39,90</span>
+                <span className="text-white font-bold">por R$ 29,90</span>
               </p>
             </motion.div>
           </div>
@@ -183,7 +183,7 @@ export function HeroGeometric() {
 
                   <div className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-4 text-center">
                     <p className="text-zinc-600 text-xs line-through">R$ 97,00</p>
-                    <p className="text-white font-black text-3xl">R$ 39,90</p>
+                    <p className="text-white font-black text-3xl">R$ 29,90</p>
                     <p className="p3-text text-[10px] font-bold uppercase tracking-widest mt-1">Acesso imediato</p>
                   </div>
                 </div>

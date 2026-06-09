@@ -1,6 +1,6 @@
 import { GlowCard } from "@/components/ui/GlowCard";
 
-const CTA_LINK = "#oferta";
+const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912";
 
 const bonuses = [
   {

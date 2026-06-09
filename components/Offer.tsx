@@ -1,4 +1,4 @@
-const CTA_LINK = "#oferta";
+const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912";
 
 const items = [
   { label: "Script Agenda Lotada completo", original: "R$ 97", free: false },
@@ -108,7 +108,7 @@ export default function Offer() {
               </p>
               <p className="text-white font-black leading-none"
                 style={{ fontSize: "clamp(3rem, 10vw, 5rem)" }}>
-                R$ 39,90
+                R$ 29,90
               </p>
             </div>
 
