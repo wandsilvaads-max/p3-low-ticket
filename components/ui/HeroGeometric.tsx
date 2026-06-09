@@ -114,7 +114,7 @@ export function HeroGeometric() {
             </motion.div>
           </div>
 
-          {/* DIREITA — Card do produto animado */}
+          {/* DIREITA — Imagem do produto */}
           <motion.div
             custom={2}
             variants={fadeUpVariants}
@@ -122,73 +122,17 @@ export function HeroGeometric() {
             animate="visible"
             className="flex-1 flex justify-center relative"
           >
-            <style>{`
-              @keyframes float-card {
-                0%, 100% { transform: perspective(900px) rotateY(-8deg) rotateX(4deg) translateY(0px); }
-                50%       { transform: perspective(900px) rotateY(-8deg) rotateX(4deg) translateY(-14px); }
-              }
-              .card-float-hero { animation: float-card 5s ease-in-out infinite; }
-            `}</style>
-
-            {/* Glow */}
             <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
               <div className="w-64 h-64 bg-orange-500/15 rounded-full blur-[80px]" />
             </div>
-
-            <div className="relative z-10">
-              {/* Card de trás */}
-              <div
-                className="absolute top-4 right-[-20px] w-64 h-[calc(100%-8px)] rounded-2xl"
-                style={{
-                  background: "linear-gradient(145deg, #1a1a1a, #0d0d0d)",
-                  border: "1px solid rgba(255,255,255,0.04)",
-                  transform: "perspective(900px) rotateY(-4deg) rotateX(2deg)",
-                }}
-              />
-
-              {/* Card principal */}
-              <div
-                className="card-float-hero relative w-56 md:w-80 rounded-2xl overflow-hidden"
-                style={{
-                  background: "linear-gradient(145deg, #1e1e1e, #111)",
-                  border: "1px solid rgba(249,115,22,0.30)",
-                  boxShadow: "0 25px 70px rgba(0,0,0,0.8), 0 0 50px rgba(249,115,22,0.12)",
-                }}
-              >
-                {/* Topo laranja */}
-                <div className="p3-gradient px-6 py-6">
-                  <p className="text-white/60 text-xs font-bold tracking-widest uppercase mb-2">P3 Company</p>
-                  <p className="text-white font-black text-2xl md:text-3xl leading-none">SCRIPT</p>
-                  <p className="text-white font-black text-2xl md:text-3xl leading-none">AGENDA LOTADA</p>
-                  <p className="text-white/60 text-xs tracking-widest uppercase mt-2">Para Clínicas de Estética</p>
-                </div>
-
-                {/* Módulos */}
-                <div className="px-6 py-5 flex flex-col gap-3">
-                  {[
-                    { n: "01", t: "Abertura sem queimar o preço" },
-                    { n: "02", t: "Qualificação com perguntas certas" },
-                    { n: "03", t: "Condução da negociação" },
-                    { n: "04", t: "Fechamento e confirmação" },
-                  ].map((m) => (
-                    <div key={m.n} className="flex items-center gap-3">
-                      <span className="w-6 h-6 p3-gradient rounded text-white font-bold text-[10px] flex items-center justify-center shrink-0">
-                        {m.n}
-                      </span>
-                      <span className="text-zinc-300 text-sm">{m.t}</span>
-                    </div>
-                  ))}
-
-                  <div className="border-t border-zinc-800 my-2" />
-
-                  <div className="bg-zinc-900 border border-zinc-800 rounded-xl px-4 py-4 text-center">
-                    <p className="text-zinc-600 text-xs line-through">R$ 97,00</p>
-                    <p className="text-white font-black text-3xl">R$ 29,90</p>
-                    <p className="p3-text text-[10px] font-bold uppercase tracking-widest mt-1">Acesso imediato</p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <Image
+              src="/hero.png"
+              alt="Script Agenda Lotada"
+              width={520}
+              height={520}
+              className="relative z-10 w-full max-w-sm md:max-w-md object-contain drop-shadow-2xl"
+              priority
+            />
           </motion.div>
         </div>
       </div>
