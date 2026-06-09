@@ -19,7 +19,7 @@ const fadeUpVariants = {
 };
 
 export function HeroGeometric() {
-  const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912";
+  const CTA_LINK = "#oferta";
 
   return (
     <div className="relative w-full overflow-hidden bg-[#0a0a0a]">
