@@ -1,6 +1,7 @@
 import Hero from "@/components/Hero";
 import Problem from "@/components/Problem";
 import Solution from "@/components/Solution";
+import ProductMockup from "@/components/ProductMockup";
 import Bonuses from "@/components/Bonuses";
 import SocialProof from "@/components/SocialProof";
 import Offer from "@/components/Offer";
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <Solution />
+      <ProductMockup />
       <Bonuses />
       <SocialProof />
       <Offer />
