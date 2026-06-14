@@ -1,4 +1,4 @@
-const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912";
+const CTA_LINK = "https://payfast.greenn.com.br/94835/offer/Bn0Ou3?ch_id=139912&b_id_1=uk833pm&b_offer_1=kPN4jc&b_id_2=108254&b_offer_2=wOhKG8";
 
 const items = [
   { label: "Script Agenda Lotada completo", original: "R$ 97", free: false },
